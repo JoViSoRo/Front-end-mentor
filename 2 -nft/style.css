@@ -1,0 +1,108 @@
+/* ----------------------------- Fonte de letras  ----------------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+/* ----------------------------- Body e resets ----------------------------- */
+body {
+  background-color: #0d1a2d;
+
+}
+h1,
+p {
+  margin: 0px;
+  color: #fafafa;
+}
+/* ----------------------------- Fundo do site, primeira div ----------------------------- */
+
+.div {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 99vw;
+  height: 98vh;
+
+}
+/* ----------------------------- Caixa que engloba tudo ----------------------------- */
+.caixa {
+  background-color: #15273f;
+  display: grid;
+  justify-content: center;
+  width: 400px;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 200px black;
+}
+
+img {
+  border-radius: 15px;
+  width: 400px;
+  height: 400px;
+}
+h1 {
+  font-family: Outfit;
+  font-weight: 500;
+  margin: 20px 0px;
+}
+.descricao {
+  font-family: Outfit;
+  color: hsl(215, 51%, 70%);
+  margin-bottom: 20px;
+}
+/* ----------------------------- Sub-caixa dos valores e do tempo ----------------------------- */
+.caixa2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.eth,
+.tempo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+.icones {
+  max-width: 20px;
+  max-height: 20px;
+}
+
+.preco {
+  color: #00fff8;
+  font-family: Outfit;
+  font-weight: 600;
+  }
+
+.data{
+  font-family: Outfit;
+  color: #8BACDA;
+}
+/* ----------------------------- Linha para descroção ----------------------------- */
+.decoracao {
+  margin: 30px 0px;
+  height: 1px;
+  background-color: hsl(215, 32%, 27%);
+}
+/* ----------------------------- Footer / Criado por... ----------------------------- */
+.foto {
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 100px;
+  margin-right: 10px;
+  border: solid white 2px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: outfit;
+}
+
+.mae{
+  color: #8BACDA;
+}
+.nome
+{
+  color: whitesmoke;
+}

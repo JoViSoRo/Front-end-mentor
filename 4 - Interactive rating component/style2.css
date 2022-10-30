@@ -1,0 +1,47 @@
+.caixinha-flutuante2 {
+  background-image: linear-gradient(
+    to bottom,
+    #1c232c,
+    rgba(37, 47, 57, 0.689)
+  );
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 20px;
+}
+.cartao {
+  max-width: 300px;
+  display: block;
+  align-self: center;
+}
+
+h1,
+h2,
+h3 p,
+li,
+a {
+  font-family: overpass;
+}
+
+.avaliacao {
+  color: #fc7614;
+  align-self: center;
+  background-color: #161b246a;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 200;
+  font-size: 1rem;
+}
+
+.agradecimento {
+  color: white;
+  text-align: center;
+}
+
+.descricao2 {
+  color: #565e68;
+  width: 30ch;
+  text-align: center;
+  align-self: center;
+}

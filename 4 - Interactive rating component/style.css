@@ -1,0 +1,95 @@
+* {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.tudo {
+  background-color: #131418;
+  width: 100vw;
+  height: 100vh;
+}
+
+h1,
+p,
+li,
+a {
+  font-family: overpass;
+}
+p {
+  font-size: 0.9rem;
+}
+
+.branco {
+  color: white;
+}
+.cinza {
+  color: hsl(216, 12%, 54%);
+}
+
+.caixinha-flutuante {
+  background-image: linear-gradient(
+    to bottom,
+    #1c232c,
+    rgba(37, 47, 57, 0.689)
+  );
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 20px;
+}
+
+.tudo {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.estrela {
+  max-width: 30px;
+  padding: 0.8rem;
+  background-color: #253037;
+  border-radius: 100%;
+}
+
+.descricao {
+  width: 50ch;
+}
+
+.lista {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.opcao {
+  padding: 20px 24px;
+  background-color: #253037;
+  border-radius: 100px;
+  text-align: center;
+}
+
+.opcao:hover {
+  background-color: #435b74;
+  color: white;
+}
+
+.opcao:active {
+  background-color: #fc7614;
+  color: white;
+}
+
+.botao {
+  background-color: #fc7614;
+  padding: 15px 30px;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+.botao:hover {
+  background-color: white;
+  color: #fc7614;
+}

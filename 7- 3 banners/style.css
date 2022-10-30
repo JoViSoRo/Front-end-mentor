@@ -1,0 +1,151 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+}
+.fundo {
+  background-color: #f2f2f2;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+
+.titulo {
+  font-family: "Big Shoulders Display";
+  color: #f2f2f2;
+  margin: 30px 0px 30px 0px;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+/* ------------------ SEDANS ------------------ */
+.descricao {
+  font-family: "Lexend Deca";
+  color: #f2f2f2ca;
+
+  font-size: 1rem;
+  width: 25ch;
+}
+
+/* ------------------ SEDANS ------------------ */
+.sedans {
+  color: #e48626;
+}
+.carro-sedans {
+  background-color: #e48626;
+  padding: 50px;
+  border-radius: 10px 0px 0px 10px;
+  line-height: 1.5;
+}
+.hover-sedan:hover {
+  background-color: #9d6022;
+  color: #f2f2f2;
+}
+/* ------------------ SUV ------------------ */
+.suv {
+  color: #006870;
+}
+.carro-suv {
+  background-color: #006870;
+  padding: 50px;
+  line-height: 1.5;
+}
+.hover-suv:hover {
+  background-color: #073336;
+  color: #f2f2f2;
+}
+/* ------------------ LUXO ------------------ */
+.luxo {
+  color: #013e3e;
+}
+.carro-luxo {
+  background-color: #013e3e;
+  padding: 50px;
+  border-radius: 0px 10px 10px 0px;
+  line-height: 1.5;
+}
+.hover-luxo:hover {
+  background-color: #002020;
+  color: #f2f2f2;
+}
+/* ------------------ BOTÕES ------------------ */
+
+.leia-mais {
+  font-family: "Lexend Deca";
+  padding: 15px 40px;
+  background-color: white;
+  border-radius: 40px;
+  display: inline-block;
+  margin-top: 40px;
+}
+
+/* ---------------------------------- RESPONSIVO  ---------------------------------- */
+@media (max-width: 500px) {
+  body {
+    height: 100vh;
+  }
+  .fundo {
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .titulo {
+    margin: 15px 0px 15px 0px;
+    font-size: 1.6rem;
+  }
+
+  /* ------------------ SEDANS ------------------ */
+  .descricao {
+    font-size: 0.7rem;
+    width: 25ch;
+  }
+
+  /* ------------------ SEDANS ------------------ */
+
+  .carro-sedans {
+    padding: 20px;
+    border-radius: 10px 10px 0px 0px;
+    line-height: 1;
+  }
+  /* ------------------ SUV ------------------ */
+
+  .carro-suv {
+    padding: 20px;
+    line-height: 1;
+  }
+
+  /* ------------------ LUXO ------------------ */
+
+  .carro-luxo {
+    background-color: #013e3e;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+    line-height: 1;
+  }
+
+  /* ------------------ BOTÕES ------------------ */
+
+  .leia-mais {
+    padding: 9px 50px;
+    border-radius: 40px;
+    display: inline-block;
+    margin-top: 20px;
+  }
+}
+
+/* ---------------------------------- RESPONSIVO  ---------------------------------- */
+@media (max-width: 360px) {
+
+  .titulo {
+    margin: 15px 0px 15px 0px;
+    font-size: 1.4rem;
+  }
+
+  

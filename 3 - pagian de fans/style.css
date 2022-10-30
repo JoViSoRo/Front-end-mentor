@@ -1,0 +1,205 @@
+/* Fonte para o titulo e o Botão */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+/* Fonte para o texto */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  background-color: #674bb1;
+  background-image: url("./images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.pagina {
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+  align-self: flex-start;
+  /* Ou margin: 60px 0px 500px 30px; */
+}
+
+/* - ---------------------------------------------------------- -  */
+
+/* O conteudo é a caixa que engloba todas as outras caixas */
+.conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+/* A caixa 1 é a caixa da imagem  */
+/* A caixa 2 é a caixa que tem os textos  */
+
+.caixa1 {
+  display: grid;
+  justify-items: right;
+}
+
+.caixa2 {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  justify-content: center;
+  margin-bottom: 100px;
+  margin-left: 40px;
+  gap: 40px;
+}
+
+.caixa2 h1 {
+  font-family: "Poppins";
+  font-weight: 500;
+  color: #f5f5f5;
+  font-size: 40px;
+}
+
+.caixa2 p {
+  font-family: "Open Sans";
+  color: whitesmoke;
+  letter-spacing: 0.4px;
+  font-size: 16px;
+}
+
+.caixa2 .botao {
+  display: flex;
+  justify-content: center;
+  font-family: "Open Sans";
+  font-weight: 500;
+  text-decoration: none;
+  color: 674bb1;
+  background-color: whitesmoke;
+  padding: 14px 15px;
+  width: 140px;
+  height: 20px;
+  border-radius: 50px;
+  transition: background 1s; /* para ficar a transição mais suave para o hover */
+  box-shadow: 3px 3px 3px rgb(69, 5, 69);
+  border: 1px rgba(255, 255, 255, 0.501) solid;
+}
+
+.caixa2 .botao:hover {
+  background-color: #9c4eca;
+  border: 1px #9c4eca90 solid;
+  color: white;
+}
+
+/* ------------------------------------------------------------------------ */
+
+.sociais img {
+  width: 20px;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 50px;
+  filter: invert(100%) sepia(2%) saturate(0%) hue-rotate(181deg)
+    brightness(104%) contrast(105%);
+}
+.sociais {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-right: 150px;
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+@media (max-width: 500px) {
+  body {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .pagina {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    margin-left: 30px;
+    width: calc(100vw-30px);
+  }
+  .logo {
+    margin-top: 10px;
+    align-self: right;
+    width: 200px;
+  }
+
+  /* - ---------------------------------------------------------- -  */
+
+  /* O conteudo é a caixa que engloba todas as outras caixas */
+  .conteudo {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 7px;
+    width: 100vw;
+    height: 75vh;
+  }
+
+  /* A caixa 1 é a caixa da imagem  */
+  /* A caixa 2 é a caixa que tem os textos  */
+
+  .caixa1 {
+    margin-top: 20px;
+    justify-items: center;
+    align-items: center;
+  }
+  .caixa1 img {
+    width: 280px;
+  }
+
+  .caixa2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .caixa2 h1 {
+    font-family: "Poppins";
+    font-weight: 500;
+    width: 20ch;
+    color: #f5f5f5;
+    font-size: 1.5rem;
+    line-height: 35px;
+  }
+
+  .caixa2 p {
+    font-family: "Open Sans";
+    width: 35ch;
+    color: whitesmoke;
+    letter-spacing: 0.4px;
+    font-size: 1rem;
+  }
+
+  .sociais img {
+    margin-top: 20px;
+    width: 20px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 50px;
+    filter: invert(100%) sepia(2%) saturate(0%) hue-rotate(181deg)
+      brightness(104%) contrast(105%);
+  }
+  .sociais {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+  }
+}
